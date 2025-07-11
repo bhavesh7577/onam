@@ -9,7 +9,7 @@
     body {
       margin: 0;
       padding: 20px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Uniform', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .logo {
@@ -19,15 +19,16 @@
       place-self: center;
     }
 
-    .logo img{
+    .logo img {
       width: auto;
     }
 
-    .banner, .video {
+    .banner,
+    .video {
       overflow: hidden;
     }
 
-    .banner{
+    .banner {
       width: 95%;
       margin-top: -5%;
       aspect-ratio: 16 / 13.7;
@@ -58,21 +59,30 @@
       margin: 2rem auto;
     }
 
-    .paragraphs p {
-      margin-bottom: 1em;
+    .paragraphs li {
       line-height: 1.6;
       margin: 1px 0;
       padding: 2px;
-      color: rgb(100, 100, 100);
+      font-size: 0.8rem;
+      color: rgb(140, 140, 140);
     }
 
-    p a{
+    li a {
       text-decoration: none;
     }
 
+    #valid-date{
+      font-weight: 500;
+    }
+
+    #terms-of-use{
+       font-size: 0.7rem;
+       color: rgb(140, 140, 140);
+    }
+
     @media (min-width:100px) and (max-width: 600px) {
-      .logo img{
-        height: 9vw;        
+      .logo img {
+        height: 9vw;
       }
 
       .video {
@@ -80,9 +90,9 @@
       }
     }
 
-        @media (min-width:601px) and (max-width: 800px) {
-      .logo img{
-        height: 8vw;        
+    @media (min-width:601px) and (max-width: 800px) {
+      .logo img {
+        height: 8vw;
       }
 
       .video {
@@ -91,8 +101,8 @@
     }
 
     @media (min-width:801px) and (max-width: 1200px) {
-      .logo img{
-        height: 7vw;       
+      .logo img {
+        height: 7vw;
       }
 
       .video {
@@ -101,7 +111,7 @@
     }
 
     @media (min-width:1201px) {
-      .logo img{
+      .logo img {
         height: 6vw;
       }
 
@@ -109,7 +119,6 @@
         border-radius: 26px;
       }
     }
-    
   </style>
 </head>
 
@@ -123,18 +132,22 @@
   </div>
 
   <div class="video">
-    <video controls autoplay muted playsinline loop> 
+    <video controls autoplay muted playsinline loop>
       <source src="https://bit.ly/464xBl5" type="video/mp4" />
     </video>
   </div>
 
   <div class="paragraphs">
-    <p>Offer valid from <b>9<sup>th</sup> July to 31<sup>st</sup> Aug 2025</b>. </p>
-    <p> The Program is confined to the state of Kerala only. </p>
-    <p>The Participants can any avail the benefits of the Program on purchase of the Products only through authorized dealers of the Organiser (“Authorized Dealers”) in Kerala.</p>
-    <p>For participating in this Program, the Participant must have made one time purchase of the Products worth Rs. 20,000/- (Rupees Twenty Thousand only) exclusive of applicable taxes, net of all returns, exchanges, during the Program Period from Authorized Dealers.</p>
-    <p>Visit your nearest dealer to avail the offer. <span style="font-size: 0.9rem;"><a href="https://ebco.in/terms-of-use">Terms and conditions apply.</a></span></p>
+    <ul>
+      <li>Offer valid from <span id="valid-date">9<sup>th</sup> July to 31<sup>st</sup> Aug 2025.</span></li>
+      <li> The Program is confined to the state of Kerala only. </li>
+      <li>The Participants can any avail the benefits of the Program on purchase of the Products only through authorized dealers of the Organiser (“Authorized Dealers”) in Kerala.</li>
+      <li>For participating in this Program, the Participant must have made one time purchase of the Products worth Rs. 20,000/- (Rupees Twenty Thousand only) exclusive of applicable taxes, net of all returns, exchanges, during the Program Period from Authorized Dealers.</li>
+      <li>Visit your nearest dealer to avail the offer. </li>
+      <li>The whole campaign and the redemption process hereunder shall be subject to the terms and conditions as provided on <a id="terms-of-use" href="https://ebco.in/terms-of-use">https://ebco.in/terms-of-use</a></li>      
   </div>
+  </ul>
 
 </body>
+
 </html>
