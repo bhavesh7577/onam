@@ -39,7 +39,6 @@
 
     .video {
       width: 92%;
-      border-radius: 26px;
       aspect-ratio: 16 / 9;
       place-self: center;
       width: 90% important;
@@ -70,15 +69,44 @@
       text-decoration: none;
     }
 
-    @media (min-width:100px) and (max-width: 1200px) {
+    @media (min-width:100px) and (max-width: 600px) {
       .logo img{
         height: 7vw;        
+      }
+
+      .video {
+        border-radius: 15px;
+      }
+    }
+
+        @media (min-width:601px) and (max-width: 800px) {
+      .logo img{
+        height: 7vw;        
+      }
+
+      .video {
+        border-radius: 20px;
+      }
+    }
+
+    @media (min-width:801px) and (max-width: 1200px) {
+      .logo img{
+        height: 7vw;       
+      }
+
+      .video {
+        border-radius: 26px;
       }
     }
 
     @media (min-width:1201px) {
       .logo img{
         height: 6vw;
+        border-radius: 26px;
+      }
+
+      .video {
+        border-radius: 26px;
       }
     }
     
